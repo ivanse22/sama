@@ -24,6 +24,16 @@
   text-decoration: none;
 }
 
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 /*Document Styles*/
 p {
   font-family: "TTCommonsPro", sans-serif;
@@ -127,6 +137,9 @@ ul {
 }
 .hero-container {
   background-color: #1a2d29;
+}
+.hero-container-grey {
+  background-color: #f4f4f4;
 }
 
 .banner-content {
@@ -421,105 +434,83 @@ h1 li {
 
 /*___________________________________*/
 /*Footer*/
+
 .footer {
   background-color: #1a2d29;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  color: white;
   padding: 50px 50px 50px 50px;
+  gap: 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
+
+.footer p {
+  color: white;
+}
+
+.product-footer li,
+.solutions-footer li,
+.pricing-footer li,
+.ourteam-footer li {
+  margin: 0 0 3rem 0;
+}
+
+.product-footer p,
+.solutions-footer p,
+.pricing-footer p,
+.ourteam-footer {
+  margin: 0 0 2rem 0;
+}
+
+.content-legal {
+  grid-column-start: span 5;
+}
+
+.content-legal p {
+  font-size: 13px;
+}
+
+/*first*/
 
 .button-footer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
+/*Second*/
 .product-footer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
+  align-items: center;
+  text-align: center;
 }
+
+/*Third*/
 
 .solutions-footer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
+  align-items: center;
+  text-align: center;
 }
-
-.footer p {
-  font-family: "TTCommonsPro", sans-serif;
-  font-size: 12px;
-  font-weight: normal;
-  line-height: 160%;
-  color: rgb(255, 255, 255);
-}
-
-/*Footer List*/
-.product-footer li {
-  color: white;
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-.product-footer p {
-  color: white;
-  font-size: 16px;
-}
-
-.solutions-footer li {
-  color: white;
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-.solutions-footer p {
-  color: white;
-  font-size: 16px;
-}
-
+/*Fourth*/
 .pricing-footer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
-.pricing_footer p {
-  color: white;
-  font-size: 16px;
-}
+/*fifth*/
 
 .ourteam-footer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
-.ourteam_footer p {
-  color: white;
-  font-size: 16px;
-}
-
-.pricing-footer p {
-  color: white;
-  font-size: 16px;
-}
-
-.ourteam-footer p {
-  color: white;
-  font-size: 16px;
-}
-
-.content-legal {
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.solid-divider {
-  display: flex;
-  border-top: 3px solid #bbb;
-}
+/*Footer List*/
 
 /*____________Solutions______________*/
 /*____________Solutions_____________*/
@@ -859,314 +850,303 @@ p {
 /* Large devices (desktops, 992px and up)*/
 @media (max-width: 992px) {
   .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
-}
-
-.footer p {
-  text-align: center;
-}
-
-.footer p strong {
-  text-align: center;
-}
-
-.footer li {
-  text-align: center;
-}
-.button-footer,
-.product-footer,
-.solutions-footer,
-.pricing-footer,
-.ourteam-footer {
-  display: flex;
-  align-items: center;
-}
-
-/* X-Large devices (large desktops, 1200px and up)*/
-
-@media (max-width: 1200px) {
-  /*nav*/
-
-  .menu-container {
-    display: none;
+  .footer .button-footer,
+  .footer .product-footer,
+  .footer .solutions-footer,
+  .footer .pricing-footer,
+  .footer .ourteam-footer {
+    grid-column-start: 1;
   }
 
-  .menu-buttons {
-    display: none;
+  .content-legal {
+    grid-column-start: span 1;
   }
 
-  .banner-content {
-    display: flex;
-    align-items: center;
+  /* X-Large devices (large desktops, 1200px and up)*/
+
+  @media (max-width: 1200px) {
+    /*nav*/
+
+    .menu-container {
+      display: none;
+    }
+
+    .menu-buttons {
+      display: none;
+    }
+
+    .banner-content {
+      display: flex;
+      align-items: center;
+    }
+    /*/////////////////////*/
+    /*_____Product____*/
+    /*________________*/
+    /*________________*/
+    /*/////////////////////*/
+
+    /*Hero Banner*/
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 50px 0px 50px;
+      background-color: #1a2d29;
+    }
+
+    .hero-heading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding-right: 20px;
+    }
+
+    .hero-heading h1 {
+      text-align: center;
+    }
+
+    .hero-heading p {
+      text-align: center;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+    }
+    /*module01*/
+
+    .first-module-50 {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .global-container {
+      align-items: center;
+    }
+    .global-container h2 {
+      text-align: center;
+    }
+
+    .global-container p {
+      text-align: center;
+    }
+
+    .first-module-50 img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /*module02*/
+
+    .img-carousel {
+      display: none;
+      max-width: 100vw;
+      height: auto;
+    }
+
+    .img-carousel-mobile {
+      display: block;
+      max-width: 100vw;
+      height: auto;
+    }
+
+    /*module03*/
+
+    .onecard-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .onecard-content {
+      align-items: center;
+      padding: auto;
+    }
+
+    .onecard-content h2 {
+      text-align: center;
+    }
+
+    .onecard-content p {
+      text-align: center;
+    }
+
+    .one-card-img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /*module04*/
+
+    .bullets-money {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .meet-money img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .img-carousel img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /*module04*/
+
+    .brands-content img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /*/////////////////////*/
+    /*_____Solutions____*/
+    /*________________*/
+    /*________________*/
+    /*/////////////////////*/
+
+    /*_____Hero banner____*/
+
+    .hero-banner-grid-solutions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #111e1b;
+    }
+    .hero-image-solutions img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .hero-heading-solutions {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .hero-heading-solutions h1 {
+      text-align: center;
+      color: white;
+    }
+
+    .hero-heading-solutions p {
+      text-align: center;
+      color: white;
+    }
+
+    /*_____Module02____*/
+
+    .costumer-container-solutions {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    .costumer-container-content {
+      align-items: center;
+      text-align: center;
+      gap: 8px;
+    }
+
+    .costumer-container-content h2 {
+      text-align: center;
+    }
+
+    .costumer-container-image-solutions img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /*_____Module03____*/
+
+    .creatives-container-solutions {
+      display: flex;
+      flex-direction: column;
+    }
+    .creatives-container-content {
+      text-align: center;
+      gap: 8px;
+    }
+    .creatives-container-image-solutions img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /*/////////////////////*/
+    /*_____Pricing____*/
+    /*________________*/
+    /*________________*/
+    /*/////////////////////*/
+
+    /*_____Hero banner____*/
+
+    .hero-banner-grid-pricing {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .hero-heading-pricing {
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .hero-heading-pricing h1 {
+      text-align: center;
+    }
+
+    .hero-heading-pricing p {
+      text-align: center;
+    }
+    .hero-image-pricing img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /*_____Prices____*/
+
+    .container-pricing-module {
+      display: flex;
+      flex-direction: column;
+      max-width: 90%;
+      width: 100%;
+      gap: 12px;
+    }
+
+    .container-pricing-module {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+    .pricing-card-module {
+      display: flex;
+      align-items: flex-start;
+      width: auto;
+      gap: 24px;
+    }
+    .pricing-card-module-special {
+      width: auto;
+    }
+
+    .pricing-title-special {
+      max-width: 200px;
+    }
+
+    .button-style {
+      max-width: 200px;
+    }
   }
+
   /*/////////////////////*/
-  /*_____Product____*/
-  /*________________*/
-  /*________________*/
-  /*/////////////////////*/
-
-  /*Hero Banner*/
-
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 50px 0px 50px;
-    background-color: #1a2d29;
-  }
-
-  .hero-heading {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding-right: 20px;
-  }
-
-  .hero-heading h1 {
-    text-align: center;
-  }
-
-  .hero-heading p {
-    text-align: center;
-  }
-
-  .hero-image img {
-    max-width: 100%;
-    height: auto;
-  }
-  /*module01*/
-
-  .first-module-50 {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .global-container {
-    align-items: center;
-  }
-  .global-container h2 {
-    text-align: center;
-  }
-
-  .global-container p {
-    text-align: center;
-  }
-
-  .first-module-50 img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /*module02*/
-
-  .img-carousel {
-    display: none;
-    max-width: 100vw;
-    height: auto;
-  }
-
-  .img-carousel-mobile {
-    display: block;
-    max-width: 100vw;
-    height: auto;
-  }
-
-  /*module03*/
-
-  .onecard-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .onecard-content {
-    align-items: center;
-    padding: auto;
-  }
-
-  .onecard-content h2 {
-    text-align: center;
-  }
-
-  .onecard-content p {
-    text-align: center;
-  }
-
-  .one-card-img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /*module04*/
-
-  .bullets-money {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .meet-money img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .img-carousel img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /*module04*/
-
-  .brands-content img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /*/////////////////////*/
-  /*_____Solutions____*/
+  /*_____Our Team____*/
   /*________________*/
   /*________________*/
   /*/////////////////////*/
 
   /*_____Hero banner____*/
 
-  .hero-banner-grid-solutions {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #111e1b;
+  /* XX-Large devices (larger desktops, 1400px and up)*/
+  @media (min-width: 1400px) {
   }
-  .hero-image-solutions img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .hero-heading-solutions {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-  }
-  .hero-heading-solutions h1 {
-    text-align: center;
-    color: white;
-  }
-
-  .hero-heading-solutions p {
-    text-align: center;
-    color: white;
-  }
-
-  /*_____Module02____*/
-
-  .costumer-container-solutions {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
-  .costumer-container-content {
-    align-items: center;
-    text-align: center;
-    gap: 8px;
-  }
-
-  .costumer-container-content h2 {
-    text-align: center;
-  }
-
-  .costumer-container-image-solutions img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /*_____Module03____*/
-
-  .creatives-container-solutions {
-    display: flex;
-    flex-direction: column;
-  }
-  .creatives-container-content {
-    text-align: center;
-    gap: 8px;
-  }
-  .creatives-container-image-solutions img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /*/////////////////////*/
-  /*_____Pricing____*/
-  /*________________*/
-  /*________________*/
-  /*/////////////////////*/
-
-  /*_____Hero banner____*/
-
-  .hero-banner-grid-pricing {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .hero-heading-pricing {
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  .hero-heading-pricing h1 {
-    text-align: center;
-  }
-
-  .hero-heading-pricing p {
-    text-align: center;
-  }
-  .hero-image-pricing img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /*_____Prices____*/
-
-  .container-pricing-module {
-    display: flex;
-    flex-direction: column;
-    max-width: 90%;
-    width: 100%;
-    gap: 12px;
-  }
-
-  .container-pricing-module {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-  }
-  .pricing-card-module {
-    display: flex;
-    align-items: flex-start;
-    width: auto;
-    gap: 24px;
-  }
-  .pricing-card-module-special {
-    width: auto;
-  }
-
-  .pricing-title-special {
-    max-width: 200px;
-  }
-
-  .button-style {
-    max-width: 200px;
-  }
-}
-
-/*/////////////////////*/
-/*_____Our Team____*/
-/*________________*/
-/*________________*/
-/*/////////////////////*/
-
-/*_____Hero banner____*/
-
-/* XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) {
 }
