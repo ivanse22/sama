@@ -4,17 +4,17 @@
 
 @font-face {
   font-family: "TTCommonsPro";
-  src: url(_fonts/TT\ Commons\ Pro\ Bold.ttf);
+  src: url(./_fonts/TT\ Commons\ Pro\ Bold.ttf);
   font-weight: bold;
 }
 @font-face {
   font-family: "TTCommonsPro";
-  src: url(_fonts/TT\ Commons\ Pro\ Medium.ttf);
+  src: url(./_fonts/TT\ Commons\ Pro\ Medium.ttf);
   font-weight: bolder;
 }
 @font-face {
   font-family: "TTCommonsPro";
-  src: url(_fonts/TT\ Commons\ Pro\ Regular.ttf);
+  src: url(./_fonts/TT\ Commons\ Pro\ Regular.ttf);
   font-weight: normal;
 }
 
@@ -783,11 +783,16 @@ p {
   flex-wrap: nowrap;
   flex-direction: row;
   padding: 100px 50px 100px 50px;
+
   background-color: #f4f4f4;
 }
 
 .hero-banner-grid-team {
   display: flex;
+
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
 }
 
 .hero-heading-team {
@@ -808,6 +813,10 @@ p {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
+
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
 }
 .team-container-image-solutions {
   display: flex;
@@ -818,6 +827,10 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
 }
 
 .team-container-content {
