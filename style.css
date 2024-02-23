@@ -519,11 +519,13 @@ h1 li {
 
 /*hero-solutions*/
 
-.hero-container-solutions {
+.hero-banner-grid-solutions {
   display: flex;
   flex-direction: row;
-  max-width: 100%;
-  background-color: #f4f4f4;
+  padding: 100px 50px 100px 50px;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
 }
 
 .hero-heading-solutions {
@@ -545,15 +547,6 @@ h1 li {
   font-weight: bold;
   text-align: left;
   line-height: 110%;
-}
-
-.hero-banner-grid-solutions {
-  display: flex;
-  flex-direction: row;
-  padding: 100px 50px 100px 50px;
-  max-width: 1400px;
-  width: 100%;
-  margin: auto;
 }
 
 .hero-heading-solutions p {
