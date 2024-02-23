@@ -4,17 +4,17 @@
 
 @font-face {
   font-family: "TTCommonsPro";
-  src: url(_fonts/TT\ Commons\ Pro\ Bold.ttf);
+  src: url(fonts/TT\ Commons\ Pro\ Bold.ttf);
   font-weight: bold;
 }
 @font-face {
   font-family: "TTCommonsPro";
-  src: url(_fonts/TT\ Commons\ Pro\ Medium.ttf);
+  src: url(fonts/TT\ Commons\ Pro\ Medium.ttf);
   font-weight: bolder;
 }
 @font-face {
   font-family: "TTCommonsPro";
-  src: url(_fonts/TT\ Commons\ Pro\ Regular.ttf);
+  src: url(fonts/TT\ Commons\ Pro\ Regular.ttf);
   font-weight: normal;
 }
 
@@ -550,7 +550,7 @@ h1 li {
 .hero-banner-grid-solutions {
   display: flex;
   flex-direction: row;
-  padding: 50px 0px 50px;
+  padding: 100px 50px 100px 50px;
   max-width: 1400px;
   width: 100%;
   margin: auto;
