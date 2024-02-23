@@ -4,17 +4,17 @@
 
 @font-face {
   font-family: "TTCommonsPro";
-  src: url(./_fonts/TT\ Commons\ Pro\ Bold.ttf);
+  src: url(_fonts/TT\ Commons\ Pro\ Bold.ttf);
   font-weight: bold;
 }
 @font-face {
   font-family: "TTCommonsPro";
-  src: url(./_fonts/TT\ Commons\ Pro\ Medium.ttf);
+  src: url(_fonts/TT\ Commons\ Pro\ Medium.ttf);
   font-weight: bolder;
 }
 @font-face {
   font-family: "TTCommonsPro";
-  src: url(./_fonts/TT\ Commons\ Pro\ Regular.ttf);
+  src: url(_fonts/TT\ Commons\ Pro\ Regular.ttf);
   font-weight: normal;
 }
 
