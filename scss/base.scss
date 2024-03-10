@@ -11,6 +11,11 @@ ul {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 // Colores
 $color-primary: #adf485;
 $color-secondary: #1a2d29;
