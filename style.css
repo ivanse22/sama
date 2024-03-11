@@ -234,12 +234,14 @@ ul li {
   font-weight: bold;
   cursor: pointer;
   background-color: #adf485;
+  transition: transform 1s ease;
   /* Module04 (repeated selector) */
 }
 .download_CTA:hover,
 .button-style:hover,
 .button_menu_signup:hover {
   background-color: #93fd58;
+  transform: scale(105%);
 }
 .download_CTA:active,
 .button-style:active,
@@ -710,10 +712,7 @@ ul li {
     gap: 8px;
   }
 }
-.creatives-container-solutions
-  .creatives-container-content
-  .creatives-container-image-solutions
-  img {
+.creatives-container-solutions .creatives-container-content .creatives-container-image-solutions img {
   max-width: 100%;
   height: auto;
 }
@@ -809,52 +808,24 @@ ul li {
   padding: 1rem;
   border-radius: 20px;
 }
-.pricing-container
-  .container-pricing-module
-  .pricing-card-module.pricing-card-module,
-.pricing-container
-  .container-pricing-module
-  .pricing-card-module-special.pricing-card-module {
+.pricing-container .container-pricing-module .pricing-card-module.pricing-card-module,
+.pricing-container .container-pricing-module .pricing-card-module-special.pricing-card-module {
   background-color: #ededed;
 }
-.pricing-container
-  .container-pricing-module
-  .pricing-card-module.pricing-card-module-special,
-.pricing-container
-  .container-pricing-module
-  .pricing-card-module-special.pricing-card-module-special {
+.pricing-container .container-pricing-module .pricing-card-module.pricing-card-module-special,
+.pricing-container .container-pricing-module .pricing-card-module-special.pricing-card-module-special {
   background-color: #1a2d29;
 }
-.pricing-container
-  .container-pricing-module
-  .pricing-card-module.pricing-card-module-special
-  .pricing-title-special
-  h4,
-.pricing-container
-  .container-pricing-module
-  .pricing-card-module-special.pricing-card-module-special
-  .pricing-title-special
-  h4 {
+.pricing-container .container-pricing-module .pricing-card-module.pricing-card-module-special .pricing-title-special h4,
+.pricing-container .container-pricing-module .pricing-card-module-special.pricing-card-module-special .pricing-title-special h4 {
   background-color: #1a2d29;
   padding: 20px;
   border-radius: 20px;
 }
-.pricing-container
-  .container-pricing-module
-  .pricing-card-module.pricing-card-module-special
-  h4,
-.pricing-container
-  .container-pricing-module
-  .pricing-card-module.pricing-card-module-special
-  p,
-.pricing-container
-  .container-pricing-module
-  .pricing-card-module-special.pricing-card-module-special
-  h4,
-.pricing-container
-  .container-pricing-module
-  .pricing-card-module-special.pricing-card-module-special
-  p {
+.pricing-container .container-pricing-module .pricing-card-module.pricing-card-module-special h4,
+.pricing-container .container-pricing-module .pricing-card-module.pricing-card-module-special p,
+.pricing-container .container-pricing-module .pricing-card-module-special.pricing-card-module-special h4,
+.pricing-container .container-pricing-module .pricing-card-module-special.pricing-card-module-special p {
   color: #1a2d29;
 }
 .pricing-container .container-pricing-module .button-style-secondary {
@@ -881,6 +852,13 @@ ul li {
   max-width: 1400px;
   width: 100%;
   margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .hero-banner-grid-team {
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+  }
 }
 .hero-banner-grid-team .hero-heading-team {
   max-width: 50%;
@@ -925,6 +903,14 @@ ul li {
   width: 100%;
   margin: auto;
 }
+@media screen and (max-width: 1200px) {
+  .team-container-solutions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .team-container-solutions .team-container-content {
   display: flex;
   flex-direction: column;
@@ -932,6 +918,15 @@ ul li {
   justify-content: center;
   max-width: 50%;
   gap: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .team-container-solutions .team-container-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 90%;
+  }
 }
 
 .team-container-solutions-2 {
@@ -943,6 +938,14 @@ ul li {
   width: 100%;
   margin: auto;
 }
+@media screen and (max-width: 1200px) {
+  .team-container-solutions-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .team-container-solutions-2 .team-container-content {
   display: flex;
   flex-direction: column;
@@ -950,6 +953,15 @@ ul li {
   justify-content: center;
   max-width: 50%;
   gap: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .team-container-solutions-2 .team-container-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 90%;
+  }
 }
 
 /* Footer */
@@ -971,45 +983,37 @@ ul li {
   color: white;
 }
 
-.footer-section,
-.button-footer,
+.footer-section, .button-footer,
 .product-footer,
 .solutions-footer,
 .pricing-footer,
-.ourteam-footer,
-.content-legal {
+.ourteam-footer, .content-legal {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 @media screen and (max-width: 992px) {
-  .footer-section,
-  .button-footer,
+  .footer-section, .button-footer,
   .product-footer,
   .solutions-footer,
   .pricing-footer,
-  .ourteam-footer,
-  .content-legal {
-    grid-column-start: 1;
+  .ourteam-footer, .content-legal {
+    rid-column-start: 1;
   }
 }
-.footer-section li,
-.button-footer li,
+.footer-section li, .button-footer li,
 .product-footer li,
 .solutions-footer li,
 .pricing-footer li,
-.ourteam-footer li,
-.content-legal li {
+.ourteam-footer li, .content-legal li {
   margin: 0 0 3rem 0;
 }
-.footer-section p,
-.button-footer p,
+.footer-section p, .button-footer p,
 .product-footer p,
 .solutions-footer p,
 .pricing-footer p,
-.ourteam-footer p,
-.content-legal p {
+.ourteam-footer p, .content-legal p {
   margin: 0 0 2rem 0;
 }
 
