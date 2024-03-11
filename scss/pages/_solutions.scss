@@ -1,0 +1,154 @@
+/*hero-solutions*/
+
+.hero-banner-grid-solutions {
+  display: flex;
+  flex-direction: row;
+  padding: 100px 50px 100px 50px;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111e1b;
+  }
+
+  .hero-heading-solutions {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 50%;
+    @include desktop {
+      align-items: center;
+    }
+
+    h1 {
+      color: $color-secondary;
+      font-size: 72px;
+      font-weight: bold;
+      text-align: left;
+      line-height: 110%;
+      @include desktop {
+        text-align: center;
+        color: $color-whitetext;
+      }
+    }
+
+    p {
+      font-family: $font-family;
+      font-weight: normal;
+      font-size: 20px;
+      color: $color-secondary;
+      text-align: left;
+      @include desktop {
+        text-align: center;
+        color: $color-whitetext;
+      }
+    }
+  }
+
+  .hero-image-solutions {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .hero-image {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @include desktop {
+      padding-top: 30px;
+    }
+  }
+}
+
+/* Costumers Solutions */
+
+.costumer-container-solutions {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  padding-top: 50px;
+
+  @include desktop {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .costumer-container-image-solutions {
+    display: flex;
+    object-fit: cover;
+    margin-top: 50px;
+    & img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .costumer-container-content {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 60%;
+
+    @include desktop {
+      justify-content: center;
+      align-items: center;
+      align-items: center;
+      text-align: center;
+      gap: 8px;
+    }
+  }
+}
+
+// Creatives Solutions
+
+.creatives-container-solutions {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .creatives-container-content {
+    max-width: 50%;
+    text-align: left;
+    gap: 8px;
+    @include desktop {
+      text-align: center;
+      gap: 8px;
+    }
+
+    .creatives-container-image-solutions img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

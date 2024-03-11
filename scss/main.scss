@@ -1,3 +1,6 @@
+@import "mediaqueries/mediaqueries";
 @import "base";
+@import "components/_navbar";
 @import "pages/index";
-@import "components/_navbar.scss";
+@import "pages/_solutions";
+@import "components/_footer";

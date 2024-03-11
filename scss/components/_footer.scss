@@ -1,0 +1,71 @@
+/* Footer */
+
+.footer {
+  background-color: #1a2d29;
+  color: white;
+  padding: 50px;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, minmax (0, 1fr));
+
+  @include smdesktop {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  p {
+    color: white;
+  }
+}
+
+// Footer Section for extend//
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @include smdesktop {
+    rid-column-start: 1;
+  }
+
+  li {
+    margin: 0 0 3rem 0;
+  }
+
+  p {
+    margin: 0 0 2rem 0;
+  }
+}
+
+/* Legal Content */
+.content-legal {
+  @extend .footer-section;
+  grid-column: span 5;
+
+  p {
+    font-size: 13px;
+  }
+  @include smdesktop {
+    grid-column-start: span 1;
+    gap: 1rem;
+  }
+}
+
+/* Sections */
+.button-footer,
+.product-footer,
+.solutions-footer,
+.pricing-footer,
+.ourteam-footer {
+  @extend .footer-section;
+  grid-column: span 1;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  & li {
+    display: block;
+  }
+}
