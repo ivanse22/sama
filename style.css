@@ -154,20 +154,21 @@ ul li {
   background-color: #1a2d29;
 }
 .hero-container-grey {
-  background-color: #f4f4f4;
+  background-color: #ededed;
 }
 
 .banner-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 60%;
+  max-width: 50%;
 }
 @media screen and (max-width: 1200px) {
   .banner-content {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    max-width: 70%;
   }
 }
 
@@ -194,6 +195,7 @@ ul li {
 @media screen and (max-width: 1200px) {
   .hero-heading h1 {
     text-align: center;
+    font-size: 3.5rem;
   }
 }
 .hero-heading p {
@@ -225,7 +227,7 @@ ul li {
   display: block;
   border: none;
   border-radius: 15px;
-  padding: 18px 42px;
+  padding: 20px 42px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
@@ -242,7 +244,7 @@ ul li {
 .download_CTA:active,
 .button-style:active,
 .button_menu_signup:active {
-  background-color: #f4f4f4;
+  background-color: #ededed;
 }
 .download_CTA .first-module-50 img,
 .download_CTA .img-carousel img,
@@ -487,6 +489,11 @@ ul li {
   align-items: center;
   gap: 26px;
 }
+@media screen and (max-width: 1200px) {
+  .meet-money .money-title-content {
+    max-width: 90%;
+  }
+}
 .meet-money .money-title-content h2 {
   max-width: 500px;
   text-align: center;
@@ -518,7 +525,7 @@ ul li {
   align-items: center;
   gap: 30px;
   padding: 60px;
-  background-color: #f4f4f4;
+  background-color: #ededed;
 }
 .brands-container .brands-content {
   max-width: 800px;
@@ -551,6 +558,7 @@ ul li {
     flex-direction: column;
     align-items: center;
     background-color: #111e1b;
+    padding: 1rem;
   }
 }
 .hero-banner-grid-solutions .hero-heading-solutions {
@@ -568,6 +576,7 @@ ul li {
 @media screen and (max-width: 1200px) {
   .hero-banner-grid-solutions .hero-heading-solutions {
     align-items: center;
+    max-width: 95%;
   }
 }
 .hero-banner-grid-solutions .hero-heading-solutions h1 {
@@ -581,6 +590,7 @@ ul li {
   .hero-banner-grid-solutions .hero-heading-solutions h1 {
     text-align: center;
     color: #fff;
+    font-size: 4.5rem;
   }
 }
 .hero-banner-grid-solutions .hero-heading-solutions p {
@@ -601,6 +611,17 @@ ul li {
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
+}
+.hero-banner-grid-solutions .hero-image-solutions img {
+  max-width: 100%;
+  max-height: auto;
+}
+@media screen and (max-width: 1200px) {
+  .hero-banner-grid-solutions .hero-image-solutions img {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    max-width: 100%;
+  }
 }
 .hero-banner-grid-solutions .hero-image-solutions .hero-image {
   padding-left: 20px;
@@ -645,7 +666,7 @@ ul li {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  max-width: 60%;
+  max-width: 50%;
 }
 @media screen and (max-width: 1200px) {
   .costumer-container-solutions .costumer-container-content {
@@ -654,6 +675,7 @@ ul li {
     align-items: center;
     text-align: center;
     gap: 8px;
+    max-width: 90%;
   }
 }
 
@@ -684,6 +706,7 @@ ul li {
 @media screen and (max-width: 1200px) {
   .creatives-container-solutions .creatives-container-content {
     text-align: center;
+    max-width: 80%;
     gap: 8px;
   }
 }
@@ -693,6 +716,240 @@ ul li {
   img {
   max-width: 100%;
   height: auto;
+}
+
+/* Hero Pricing Banner */
+.hero-banner-grid-pricing {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding: 100px 50px 100px 50px;
+  background-color: #ededed;
+  gap: 20px;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+}
+.hero-banner-grid-pricing .hero-heading-pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  max-width: 50%;
+}
+@media screen and (max-width: 1200px) {
+  .hero-banner-grid-pricing .hero-heading-pricing {
+    max-width: 90%;
+  }
+}
+.hero-banner-grid-pricing .hero-heading-pricing h1 {
+  color: #1a2d29;
+  font-size: 72px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 110%;
+}
+.hero-banner-grid-pricing .hero-heading-pricing p {
+  font-family: "TTCommonsPro", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  color: #1a2d29;
+  text-align: left;
+}
+.hero-banner-grid-pricing .hero-image-pricing {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+}
+
+/* Pricing Container */
+.pricing-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 26px;
+  padding: 40px;
+}
+.pricing-container .button-pricing-onetime,
+.pricing-container .button-pricing-enterprise {
+  background-color: #adf485;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 18px 42px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.pricing-container .pricing-buttons-style {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.pricing-container .container-pricing-module {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  border-radius: 30px;
+  max-width: 1400px;
+  width: 100%;
+  margin: 20px auto 20px auto;
+}
+.pricing-container .container-pricing-module .pricing-card-module,
+.pricing-container .container-pricing-module .pricing-card-module-special {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  padding: 1rem;
+  border-radius: 20px;
+}
+.pricing-container
+  .container-pricing-module
+  .pricing-card-module.pricing-card-module,
+.pricing-container
+  .container-pricing-module
+  .pricing-card-module-special.pricing-card-module {
+  background-color: #ededed;
+}
+.pricing-container
+  .container-pricing-module
+  .pricing-card-module.pricing-card-module-special,
+.pricing-container
+  .container-pricing-module
+  .pricing-card-module-special.pricing-card-module-special {
+  background-color: #1a2d29;
+}
+.pricing-container
+  .container-pricing-module
+  .pricing-card-module.pricing-card-module-special
+  .pricing-title-special
+  h4,
+.pricing-container
+  .container-pricing-module
+  .pricing-card-module-special.pricing-card-module-special
+  .pricing-title-special
+  h4 {
+  background-color: #1a2d29;
+  padding: 20px;
+  border-radius: 20px;
+}
+.pricing-container
+  .container-pricing-module
+  .pricing-card-module.pricing-card-module-special
+  h4,
+.pricing-container
+  .container-pricing-module
+  .pricing-card-module.pricing-card-module-special
+  p,
+.pricing-container
+  .container-pricing-module
+  .pricing-card-module-special.pricing-card-module-special
+  h4,
+.pricing-container
+  .container-pricing-module
+  .pricing-card-module-special.pricing-card-module-special
+  p {
+  color: #1a2d29;
+}
+.pricing-container .container-pricing-module .button-style-secondary {
+  border: none;
+  border-radius: 15px;
+  padding: 18px 42px;
+  text-align: center;
+  text-decoration: none;
+  color: #1a2d29;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #adf485;
+}
+
+.hero-banner-grid-team {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding: 100px 50px 100px 50px;
+  background-color: #ededed;
+  gap: 20px;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+}
+.hero-banner-grid-team .hero-heading-team {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .hero-banner-grid-team .hero-heading-team {
+    max-width: 90%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+}
+.hero-banner-grid-team .hero-heading-team p {
+  text-align: center;
+}
+.hero-banner-grid-team .hero-heading-team h1 {
+  text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  .hero-banner-grid-team {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #1a2d29;
+    gap: 20px;
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.team-container-solutions {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 100px 50px 100px 50px;
+  gap: 20px;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+}
+.team-container-solutions .team-container-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
+  gap: 10px;
+}
+
+.team-container-solutions-2 {
+  display: flex;
+  flex-direction: row;
+  padding: 100px 50px 100px 50px;
+  gap: 20px;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+}
+.team-container-solutions-2 .team-container-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
+  gap: 20px;
 }
 
 /* Footer */
@@ -776,10 +1033,10 @@ ul li {
 .solutions-footer,
 .pricing-footer,
 .ourteam-footer {
-  grid-column: span 1;
   gap: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  grid-column: span 1;
 }
 .button-footer li,
 .product-footer li,

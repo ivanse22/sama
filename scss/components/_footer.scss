@@ -60,10 +60,11 @@
 .pricing-footer,
 .ourteam-footer {
   @extend .footer-section;
-  grid-column: span 1;
+
   gap: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  grid-column: span 1;
 
   & li {
     display: block;
