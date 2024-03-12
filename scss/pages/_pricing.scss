@@ -10,6 +10,11 @@
   width: 100%;
   margin: auto;
 
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+  }
+
   .hero-heading-pricing {
     display: flex;
     flex-direction: column;
@@ -18,6 +23,7 @@
     max-width: 50%;
 
     @include desktop {
+      align-items: center;
       max-width: 90%;
     }
 
@@ -27,6 +33,10 @@
       font-weight: bold;
       text-align: left;
       line-height: 110%;
+
+      @include desktop {
+        text-align: center;
+      }
     }
 
     p {
@@ -35,6 +45,9 @@
       font-size: 20px;
       color: $color-secondary;
       text-align: left;
+      @include desktop {
+        text-align: center;
+      }
     }
   }
 
@@ -43,6 +56,10 @@
     padding-left: 20px;
     padding-right: 20px;
     align-items: center;
+  }
+  @include desktop {
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -59,7 +76,7 @@
   .button-pricing-onetime,
   .button-pricing-enterprise {
     background-color: $color-primary;
-    color: white;
+    color: $color-secondary;
     border: none;
     border-radius: 30px;
     padding: 18px 42px;
@@ -127,5 +144,48 @@
       cursor: pointer;
       background-color: $color-primary;
     }
+  }
+}
+
+.container-pricing-module {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: auto;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 1400px;
+
+  color: $color-secondary;
+  background-color: $color-background;
+
+  & > :nth-child(1) {
+    border-radius: 20px;
+    background-color: #e2e2e2;
+    padding: 40px;
+  }
+
+  & > :nth-child(2) {
+    border-radius: 20px;
+    background-color: #e2e2e2;
+    padding: 40px;
+  }
+
+  & > :nth-child(3) {
+    color: white;
+    border-radius: 20px;
+    background-color: $color-secondary;
+    padding: 40px;
+  }
+
+  & > :nth-child(4) {
+    border-radius: 20px;
+    background-color: #e2e2e2;
+    padding: 40px;
+  }
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }

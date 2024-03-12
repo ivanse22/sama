@@ -729,6 +729,12 @@ ul li {
   width: 100%;
   margin: auto;
 }
+@media screen and (max-width: 1200px) {
+  .hero-banner-grid-pricing {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .hero-banner-grid-pricing .hero-heading-pricing {
   display: flex;
   flex-direction: column;
@@ -738,6 +744,7 @@ ul li {
 }
 @media screen and (max-width: 1200px) {
   .hero-banner-grid-pricing .hero-heading-pricing {
+    align-items: center;
     max-width: 90%;
   }
 }
@@ -748,6 +755,11 @@ ul li {
   text-align: left;
   line-height: 110%;
 }
+@media screen and (max-width: 1200px) {
+  .hero-banner-grid-pricing .hero-heading-pricing h1 {
+    text-align: center;
+  }
+}
 .hero-banner-grid-pricing .hero-heading-pricing p {
   font-family: "TTCommonsPro", sans-serif;
   font-weight: normal;
@@ -755,11 +767,22 @@ ul li {
   color: #1a2d29;
   text-align: left;
 }
+@media screen and (max-width: 1200px) {
+  .hero-banner-grid-pricing .hero-heading-pricing p {
+    text-align: center;
+  }
+}
 .hero-banner-grid-pricing .hero-image-pricing {
   display: flex;
   padding-left: 20px;
   padding-right: 20px;
   align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  .hero-banner-grid-pricing {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* Pricing Container */
@@ -775,7 +798,7 @@ ul li {
 .pricing-container .button-pricing-onetime,
 .pricing-container .button-pricing-enterprise {
   background-color: #adf485;
-  color: white;
+  color: #1a2d29;
   border: none;
   border-radius: 30px;
   padding: 18px 42px;
@@ -840,6 +863,45 @@ ul li {
   font-weight: bold;
   cursor: pointer;
   background-color: #adf485;
+}
+
+.container-pricing-module {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: auto;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 1400px;
+  color: #1a2d29;
+  background-color: #ededed;
+}
+.container-pricing-module > :nth-child(1) {
+  border-radius: 20px;
+  background-color: #e2e2e2;
+  padding: 40px;
+}
+.container-pricing-module > :nth-child(2) {
+  border-radius: 20px;
+  background-color: #e2e2e2;
+  padding: 40px;
+}
+.container-pricing-module > :nth-child(3) {
+  color: white;
+  border-radius: 20px;
+  background-color: #1a2d29;
+  padding: 40px;
+}
+.container-pricing-module > :nth-child(4) {
+  border-radius: 20px;
+  background-color: #e2e2e2;
+  padding: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .container-pricing-module {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .hero-banner-grid-team {
