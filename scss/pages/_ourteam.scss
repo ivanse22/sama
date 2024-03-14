@@ -65,11 +65,11 @@
     justify-content: center;
   }
 
-  & .team-container-content {
+  .team-container-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content: start;
     max-width: 50%;
     gap: 10px;
 
@@ -101,7 +101,7 @@
   & .team-container-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     max-width: 50%;
     gap: 20px;

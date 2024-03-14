@@ -976,8 +976,8 @@ ul li {
 .team-container-solutions .team-container-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: start;
   max-width: 50%;
   gap: 10px;
 }
@@ -1011,7 +1011,7 @@ ul li {
 .team-container-solutions-2 .team-container-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   max-width: 50%;
   gap: 20px;
