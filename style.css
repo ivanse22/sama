@@ -940,7 +940,7 @@ ul li {
   text-align: center;
 }
 .hero-banner-grid-team .hero-heading-team h1 {
-  text-align: center;
+  text-align: left;
 }
 @media screen and (max-width: 1200px) {
   .hero-banner-grid-team {
