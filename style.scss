@@ -1026,6 +1026,17 @@ ul li {
   }
 }
 
+.login-wrapper {
+  max-width: 1240px;
+  display: flex;
+}
+
+.login-banner {
+  max-width: 600px;
+  max-height: 740px;
+  background-color: #adf485;
+}
+
 /* Footer */
 .footer {
   background-color: #1a2d29;

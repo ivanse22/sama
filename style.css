@@ -15,6 +15,13 @@ img {
   height: auto;
 }
 
+button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
 p {
   font-family: "TTCommonsPro", sans-serif;
   font-size: 1.125rem;
@@ -1024,6 +1031,77 @@ ul li {
     text-align: center;
     max-width: 90%;
   }
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  .login-wrapper {
+    flex-direction: column-reverse;
+  }
+}
+
+.login-banner {
+  color: white;
+  padding-top: 65px;
+  padding-left: 65px;
+  padding-right: 65px;
+  max-width: 600px;
+  background-color: #1a2d29;
+}
+@media screen and (max-width: 1200px) {
+  .login-banner {
+    max-width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.button-social {
+  background-color: white;
+  border-radius: 30px;
+  font-family: "TTCommonsPro", sans-serif;
+  font-weight: bold;
+  color: #333333;
+  width: 568px;
+  height: 64px;
+  outline: none;
+  border: 1px solid #333333;
+  transition: transform 100ms ease;
+}
+.button-social:hover {
+  background-color: #adf485;
+  color: #1a2d29;
+  transform: scale(101%);
+}
+
+.login-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 570px;
+  gap: 24px;
+}
+@media screen and (max-width: 1200px) and (max-width: 1200px) {
+  .login-section {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
 
 /* Footer */
