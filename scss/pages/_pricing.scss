@@ -93,27 +93,17 @@
     gap: 8px;
   }
 
-  .container-pricing-module {
+  .pricing-card-module,
+  .pricing-card-module-special {
     display: flex;
-    flex-direction: row;
-    gap: 16px;
-    border-radius: 30px;
-    max-width: 1400px;
+    flex-direction: column;
     width: 100%;
-    margin: 20px auto 20px auto;
+    gap: 20px;
+    padding: 1rem;
+    border-radius: 20px;
 
-    .pricing-card-module,
-    .pricing-card-module-special {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      gap: 20px;
-      padding: 1rem;
-      border-radius: 20px;
-
-      &.pricing-card-module {
-        background-color: $color-background;
-      }
+    &.pricing-card-module {
+      background-color: $color-background;
 
       &.pricing-card-module-special {
         background-color: $color-secondary;
@@ -151,8 +141,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-  margin: auto;
   border-radius: 20px;
+  margin: 3rem auto 4rem auto;
   padding: 40px;
   max-width: 1400px;
 

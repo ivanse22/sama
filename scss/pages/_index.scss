@@ -106,20 +106,13 @@
   .img-carousel img,
   .one-card-img,
   .meet-money img,
-  .img-carousel-mobile,
   .brands-content img {
     max-width: 100%;
     height: auto;
   }
 
-  .img-carousel {
-    display: none;
-    max-width: 100vw;
-    height: auto;
-  }
-
   .img-carousel-mobile {
-    display: block;
+    display: none;
     max-width: 100vw;
     height: auto;
   }
@@ -216,11 +209,18 @@
     display: block;
     max-width: 100vw;
     height: auto;
+    @include desktop {
+      display: none;
+    }
   }
-}
-.img-carousel-mobile {
-  @include desktop {
+
+  .img-carousel-mobile {
     display: none;
+    max-width: 100vw;
+    height: auto;
+    @include desktop {
+      display: block;
+    }
   }
 }
 
