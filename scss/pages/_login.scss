@@ -40,6 +40,10 @@
   outline: none;
   border: 1px solid #333333;
   transition: transform 100ms ease;
+  @include desktop {
+    max-width: 568px;
+    width: 90vw;
+  }
 
   &:hover {
     background-color: #adf485;
@@ -55,10 +59,10 @@
   gap: 24px;
 
   @include desktop {
-    @include desktop {
-      justify-content: center;
-      align-items: center;
-    }
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    max-width: 568px;
   }
 }
 

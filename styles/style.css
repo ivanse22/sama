@@ -1069,6 +1069,12 @@ ul li {
   border: 1px solid #333333;
   transition: transform 100ms ease;
 }
+@media screen and (max-width: 1200px) {
+  .button-social {
+    max-width: 568px;
+    width: 90vw;
+  }
+}
 .button-social:hover {
   background-color: #adf485;
   color: #1a2d29;
@@ -1081,10 +1087,12 @@ ul li {
   max-width: 570px;
   gap: 24px;
 }
-@media screen and (max-width: 1200px) and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .login-section {
     justify-content: center;
     align-items: center;
+    width: 90vw;
+    max-width: 568px;
   }
 }
 
