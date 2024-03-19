@@ -4,7 +4,7 @@
   background-color: #1a2d29;
   color: white;
   padding: 50px;
-  gap: 1rem;
+  gap: 0.125rem;
   display: grid;
   grid-template-columns: repeat(5, minmax (0, 1fr));
 
@@ -27,11 +27,12 @@
   text-align: center;
 
   @include smdesktop {
-    rid-column-start: 1;
+    grid-column-start: 1;
   }
 
   li {
-    margin: 0 0 3rem 0;
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
   }
 
   p {
@@ -49,24 +50,28 @@
   }
   @include smdesktop {
     grid-column-start: span 1;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 }
 
 /* Sections */
-.button-footer,
 .product-footer,
 .solutions-footer,
 .pricing-footer,
 .ourteam-footer {
   @extend .footer-section;
 
-  gap: 1rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   grid-column: span 1;
 
   & li {
     display: block;
   }
+}
+.button-footer {
+  @extend .footer-section;
+  gap: 3rem;
+  padding-bottom: 3rem;
 }

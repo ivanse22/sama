@@ -80,18 +80,15 @@ ul {
   font-size: $base-font-size;
   font-weight: normal;
 
-  // Anidamiento para listas
   li {
     display: inline-block;
-    margin-right: 10px; // Puedes usar una variable si lo prefieres
+    margin-right: 10px;
   }
 
-  // Uso de mixin para establecer el borde redondeado
   @mixin border-radius($radius) {
     border-radius: $radius;
   }
 
-  // Aplicación del mixin al estilo de la lista
   @include border-radius(5px);
 }
 
